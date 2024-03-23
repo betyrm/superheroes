@@ -4,7 +4,9 @@
 }
 
 header{
-    position: sticky;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
     top: 0;
 }
 
@@ -40,11 +42,12 @@ header{
 }
 
 .contenedor{
-    border: 1px solid black;
-    width: 961px;
-    height: 530px;
-    margin: 200px;
-    align-items: center;
+    
+    max-width: 961px;
+    width: 100%;
+    min-height: calc(100vh - 230px);
+    padding-top: 230px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
 }
@@ -54,13 +57,18 @@ header{
     height: 528px;
     display: flex;
     flex-direction: column;
-    position: relative
+    position: relative;
+    justify-content: flex-start;
    
 }
 
 .casa{
     background-color: white;
     position: relative;
+    background: url(/img/batman.jpg) no-repeat;
+    background-size: cover;
+    height: 198px;
+    border-radius: 16% 16% 0 0;
 }
 
 .casa i{
@@ -73,10 +81,18 @@ header{
 }
 .casa img{
     width: 100%;
-    height: 198px;
-   
-    border-radius: 16% 16% 0 0;
+    height: 200px;
+    object-fit: cover;
+    
  }
+.casa1{
+    background: url(/img/harleyquin.jfif) no-repeat;
+    background-size: cover;
+}
+.casa2{
+    background: url(/img/hombrearaña.webp) no-repeat;
+    background-size: cover;
+}
 
 .casa .cara{
     width: 120px;
@@ -95,7 +111,7 @@ header{
     height: 334px;
     width: 100%;
     background-color: #F3F3F3;
- 
+    box-shadow: 0px 10px 7px 0px #00000040;
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
@@ -149,7 +165,7 @@ footer p{
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0em;
-
+    margin-top: 20px;
 
     
 }
